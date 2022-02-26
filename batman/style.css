@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow:hidden;
+    margin: 0;
+    background: rgb(113,113,113);
+    background: linear-gradient(292deg, rgba(113,113,113,1) 0%, rgba(0,0,0,1) 52%);
+}
+
+.oval{
+    width:230px;
+    height: 130px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    border: 8px solid yellow;
+    overflow: hidden;
+}
+
+
+
+.o1{
+    position: absolute;
+    background-color: yellow;
+    width: 37px;
+    height: 72px;
+    border-radius: 50%;
+    top: 67px;
+    left: 65px;
+    transform: rotate(-30deg);
+    z-index: 1;
+}
+
+.o2{
+    position: absolute;
+    background-color: yellow;
+    width: 37px;
+    height: 70px;
+    border-radius: 50%;
+    top: 67px;
+    left: 36px;
+    transform: rotate(-46deg);
+    z-index: 1;
+}
+
+.o3{
+    position: absolute;
+    background-color: yellow;
+    width: 37px;
+    height: 72px;
+    border-radius: 50%;
+    top: 67px;
+    right: 65px;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+.o4{
+    position: absolute;
+    background-color: yellow;
+    width: 37px;
+    height: 70px;
+    border-radius: 50%;
+    top: 67px;
+    right: 36px;
+    transform: rotate(46deg);
+    z-index: 1;
+}
+
+.o5{
+    width: 35px;
+    height: 47px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: yellow;
+    top: -23px;
+    left: 59px;
+}
+
+.o6{
+    width: 35px;
+    height: 47px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: yellow;
+    top: -23px;
+    right: 63px;
+}
+
+.sq1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    top: -13px;
+    left: 72px;
+    z-index: 0;
+}
+
+.sq2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    top: -13px;
+    right: 72px;
+    z-index: 0;
+}
+
+.ears{
+    position: absolute;
+    border-bottom: 64px solid yellow;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: -54px;
+    left: 78px;
+    z-index: 0;
+    height: 0px;
+    width: 54px;
+    transform: rotate(180deg);
+}
+
+.shine{
+    width: 30px;
+    height: 500px;
+    z-index: 0;
+    position: absolute;
+    background-color: rgb(187, 187, 187);
+    opacity: 0;
+    transform: rotate(-5deg) translateX(-1000px);
+    top:0;
+    left: 0;
+    transition: transform linear 1.5s;
+}
+
+.oval:hover .shine{
+
+    opacity: 0.2;
+    top:0;
+    left: 0;
+    transform: rotate(-5deg) translateX(1000px) ;
+}
+

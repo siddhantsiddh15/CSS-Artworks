@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow:hidden;
+    margin: 0;
+}
+
+.camera{
+    height: 150px;
+    width: 200px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px 0px grey ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}  
+
+.inner-lens{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: darkslategray;
+    top: 16px;
+    left: 15px;
+    overflow: hidden;
+}
+
+.inner-lens-2{
+    height:0px;
+    width: 0px;
+    border-top: 25px solid teal;
+    border-bottom: 25px solid lightsteelblue;
+    border-right: 25px solid lightseagreen;
+    border-left: 25px solid lightgrey;
+    border-radius: 50%;
+    top: 10px;
+    left:10px;
+    position: absolute;
+    
+}
+
+.inner-lens-2:hover{
+    transform: rotate(30deg) scale(1.2);
+    transition: transform 0.4s linear;
+}
+
+.flash{
+    width: 20px;
+    height: 10px;
+    background-color: beige;
+    border-radius: 25%;
+    position: absolute;
+    top:12px;
+    left: 171px;
+    
+}
+
+ .flash:hover{
+     border-radius: 75%;
+    box-shadow: 0px 2px 13px 17px rgb(255 255 158);
+}
+
+.button{
+    height: 4px;
+    width: 26px;
+    background-color: teal;
+    top: -5px;
+    left: 19px;
+    border-radius: 25%;
+    position: absolute;
+    box-shadow: 0 7px 26px -1px grey;
+}
