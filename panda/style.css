@@ -32,6 +32,7 @@ body{
     border-radius: 0 0 115px 115px;
     transform: rotate(30deg);
     overflow: hidden;
+    transition: transform 0.3s linear;
 }
 
 .left-ball{
@@ -61,6 +62,7 @@ body{
     border-radius: 0 0 115px 115px;
     transform: rotate(-30deg);
     overflow: hidden;
+    transition: transform 0.3s linear;
 }
 
 .right-ball{
@@ -121,6 +123,28 @@ body{
 }
 
 
-.left-ball:hover, .right-ball:hover, .mouth:hover{
+/* .left-ball:hover, .right-ball:hover, .mouth:hover{
     transform: scale(0.85);
+} */
+
+.panda:hover .left-ball{
+    transform: scale(0.85);
+}
+
+.panda:hover .mouth{
+    transform: translateY(20%) translateX(-40%) rotate(-10deg);
+}
+
+.panda:hover .right-ball{
+    transform: scale(0.85);
+}
+
+.panda:hover .eye-left{
+    transform: rotate(35deg);
+    
+}
+
+.panda:hover .eye-right{
+    transform: rotate(-35deg);
+    
 }
